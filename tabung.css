@@ -1,0 +1,86 @@
+body{
+    background-color: blueviolet;
+}
+form .variasi h2{
+    text-shadow:0 0 4px deeppink,  
+                0 0 8px deeppink,        
+                0 0 80px deeppink; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+   }
+form label{
+       font-family: 'Courier New', Courier, monospace;
+       text-align: center;
+       color: #fff;
+       justify-content: center;
+   }
+form h2 strike{
+    font-family: "Death Metal";
+    text-shadow:0 0 4px rgb(105, 33, 72),
+                0 0 4px rgb(105, 33, 72),
+                0 0 4px rgb(105, 33, 72),  
+                0 0 8px rgba(90, 15, 55, 0.123),
+                0 0 8px rgba(90, 15, 55, 0.123),        
+                0 0 8px rgba(90, 15, 55, 0.123),                
+                0 0 80px rgb(61, 16, 40); 
+    }
+  
+form input{
+    width: calc(100%-20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid #030407;
+    color:rgb(10, 12, 10);
+    box-shadow:0 0 4px rgb(105, 33, 72),  
+                0 0 8px rgba(90, 15, 55, 0.123),        
+                0 0 80px rgb(61, 16, 40); 
+    font-size: 20px;
+    align-items: center;
+   }
+form button{
+    background-color: brown;
+    color: cornsilk;
+    padding: 8px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 4px deeppink,  
+                0 0 8px deeppink,
+                0 0 90px deeppink,        
+                0 0 80px deeppink;
+    text-decoration-style: double; 
+    text-decoration-line: initial;
+    }
+.clock{    
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    text-shadow:0 0 4px maroon,
+                0 0 4px rgb(168, 43, 147),
+                0 0 8px blueviolet, 
+                0 0 8px palevioletred,
+                0 0 19px deeppink, 
+                0 0 50px red,
+                0 0 50px rgb(101, 19, 177),
+                0 0 80px red, 
+                0 0 90px deeppink,
+                0 0 90px deeppink,
+                0 0 90px deeppink;
+    background-image: url(https://i.pinimg.com/originals/88/fb/60/88fb60ec556886275ae280857f321e46.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px 220px;
+    background-position-y: 10%;
+    }
+    form .variasi p{
+        color: #fff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form .mbin p{
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 100;
+        font-weight: bold;
+        font-size: 14pt;
+        color: black;
+     }

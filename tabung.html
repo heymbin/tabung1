@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabung</title>
+    <link rel="stylesheet" type="text/css" href="tabung.css">
+    <link rel="stylesheet" href="https://unpkg.com/@auroratide/typewritten-text@0.1.4/lib/style.css"/>
+</head>
+<body>
+    <script>
+       function tabung(){
+            let pi,diameter,tinggi,jari,luasAlas,luasPermukaan,lpTanpaTutup,luasSelimut;
+            let volume;
+            pi=parseFloat(22/7);
+            jari=parseFloat(document.getElementById('jari').value);
+            tinggi=parseFloat(document.getElementById('tinggi').value)
+            diameter=2*jari;
+            luasSelimut=2*pi*jari*tinggi;
+            luasAlas=pi*jari*jari;
+            luasPermukaan=2*luasAlas+luasSelimut;
+            lpTanpaTutup=luasAlas+luasSelimut;
+            volume=luasAlas*tinggi;
+            document.getElementById('luas').value=luasAlas;
+            document.getElementById('luasPermukaan').value=luasPermukaan;
+            document.getElementById('luasSelimut').value=luasSelimut;
+            document.getElementById('lptanpatutup').value=lpTanpaTutup;
+            document.getElementById('volume').value=volume;
+        }
+        function waktu(){
+            let ap="";
+            let date=new Date();
+            let jam=date.getHours();
+            let menit=date.getMinutes();
+            let detik=date.getSeconds();
+            if (jam<12){
+                ap="AM";
+            }
+            else{
+                ap="PM";
+            }
+            if (jam == 0){
+                jam=12;
+            }
+            if(jam > 12){
+                jam= jam -12;
+            }
+            jam = cek(jam);
+            menit=cek(menit);
+            detik=cek(detik);
+            document.getElementById('clock').innerHTML=`${jam}:${menit}:${detik}.${ap}`
+        }
+        function cek(i){
+            if(i < 10){
+                i="0"+i;
+            }
+            return i;
+        }
+        setInterval(waktu,500);
+    </script>
+    <div class="clock" id="clock"></div>
+
+        <form> 
+        <div class="variasi">
+        <h2 >SEMUA TENTTANG <strike>KAMU</strike> TABUNG</h2>
+        <center>
+                <label>Jari-jari</label><br/>
+                <input type="text" id="jari"><br/>
+                <label>Tinggi</label><br/>
+                <input type="text" id="tinggi"><br/>
+                <p><button type="button" onclick="tabung()">Proses</button>
+                <button type="reset"  onclick="tabung()">Reset</button></p>
+                <label>Luas Alas</label><br/>
+                <input type="text" id="luas"><br/>
+                <label>Luas Permukaan</label><br/>
+                <input type="text" id="luasPermukaan"><br/>
+                <label>Luas Permukaan Tanpa Tutup</label><br/>
+                <input type="text" id="lptanpatutup"><br/>
+                <label>Luas Selimut</label><br/>
+                <input type="text" id="luasSelimut"><br/>
+                <label>Volume</label><br/>
+                <input type="text" id="volume"><br/>
+                <p>Untuk luas satuannya adalah kuadrat <sup>2</sup> dan untuk volume satuannya adalah <sup>3</sup></p>
+</center>
+<div class="mbin">
+    <typewritten-text>
+        <center>
+<p>Muda Berkarya Intelektual Normatif</p>
+</center>
+</typewritten-text>
+
+    </div>
+        </form>
+    
+        <script type="module" src="https://unpkg.com/@auroratide/typewritten-text@0.1.4/lib/define.js"></script>
+
+        
+</body>
+</html>
